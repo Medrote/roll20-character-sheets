@@ -46,7 +46,7 @@
     <input type="number" name="attr_For" style="background-color:lightblue" value="0"/>
     <input type="number" width=3 style= 'width: 3.5em;' name="attr_For-Mod" value="(ceil((@{For}-10)/2))" disabled>
     <input type="number" name="attr_For-Temp" value="0"/>
-    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_For-Teste" value="(@{For}*4)" disabled>
+    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_For-Teste" value="(@{For}*3)" disabled>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Força}} {{Valor_Atributo=[[@{For-Teste}]]}} {{Sucesso_Crítico=[[floor(@{For-Teste}/4)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Força}} {{Valor_Atributo=[[(@{For-Teste}/2)]]}} {{Sucesso_Crítico=[[floor(@{For-Teste}/8)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Força}} {{Valor_Atributo=[[(@{For-Teste}/4)]]}} {{Sucesso_Crítico=[[floor(@{For-Teste}/16)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
@@ -66,7 +66,7 @@
     <input type="number" style= "background-color:lightblue" name="attr_Con" value="0"/> 
     <input type="number" width=3 style='width: 3.5em;' name="attr_Con-Mod" value="(ceil((@{Con}-10)/2))" disabled>
     <input type="number" name="attr_Con-Temp" value="0"/>
-    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;"  name="attr_Con-Teste" value="(@{Con}*4)" disabled>
+    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;"  name="attr_Con-Teste" value="(@{Con}*3)" disabled>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;"  value="&{template:default} {{name=@{character_name} Teste de Constituição}} {{Valor_Atributo=[[@{Con-Teste}]]}} {{Sucesso_Crítico=[[floor(@{Con-Teste}/4)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;"  value="&{template:default} {{name=@{character_name} Teste de Constituição}} {{Valor_Atributo=[[(@{Con-Teste}/2)]]}} {{Sucesso_Crítico=[[floor(@{Con-Teste}/8)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;"  value="&{template:default} {{name=@{character_name} Teste de Constituição}} {{Valor_Atributo=[[(@{Con-Teste}/4)]]}} {{Sucesso_Crítico=[[floor(@{Con-Teste}/16)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
@@ -79,7 +79,7 @@
     <input type="number" style="background-color:lightblue" name="attr_Des"value="0"/>
     <input type="number" width=3 style='width: 3.5em;' name="attr_Des-Mod" value="(ceil((@{Des}-10)/2))" disabled>
     <input type="number" name="attr_Des-Temp" value="0"/>
-    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;"  name="attr_Des-Teste" value="(@{Des}*4)" disabled>
+    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;"  name="attr_Des-Teste" value="(@{Des}*3)" disabled>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Destreza}} {{Valor_Atributo=[[@{Des-Teste}]]}} {{Sucesso_Crítico=[[floor(@{Des-Teste}/4)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Destreza}} {{Valor_Atributo=[[(@{Des-Teste}/2)]]}} {{Sucesso_Crítico=[[floor(@{Des-Teste}/8)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Destreza}} {{Valor_Atributo=[[(@{Des-Teste}/4)]]}} {{Sucesso_Crítico=[[floor(@{Des-Teste}/16)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
@@ -89,7 +89,7 @@
     <input type="number" style= "background-color:lightblue" name="attr_Agi"value="0"/> 
     <input type="number" width=3 style='width: 3.5em;' name="attr_Agi-Mod" value="(ceil((@{Agi}-10)/2))" disabled>
    <input type="number" name="attr_Agi-Temp" value="0"/>
-    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Agi-Teste" value="(@{Agi}*4)" disabled>
+    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Agi-Teste" value="(@{Agi}*3)" disabled>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de  Agilidade}} {{Valor_Atributo=[[@{Agi-Teste}]]}} {{Sucesso_Crítico=[[floor(@{Agi-Teste}/4)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de  Agilidade}} {{Valor_Atributo=[[(@{Agi-Teste}/2)]]}} {{Sucesso_Crítico=[[floor(@{Agi-Teste}/8)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de  Agilidade}} {{Valor_Atributo=[[(@{Agi-Teste}/4)]]}} {{Sucesso_Crítico=[[floor(@{Agi-Teste}/16)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
@@ -99,7 +99,7 @@
     <input type="number" style="background-color:lightblue" name="attr_Per"value="0"/> 
     <input type="number" width=3 style='width: 3.5em;' name="attr_Per-Mod" value="(ceil((@{Per}-10)/2))" disabled>
     <input type="number" name="attr_Per-Temp" value="0"/>
-    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Per-Teste" value="(@{Per}*4)" disabled>
+    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Per-Teste" value="(@{Per}*3)" disabled>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Percepção}} {{Valor_Atributo=[[@{Per-Teste}]]}} {{Sucesso_Crítico=[[floor(@{Per-Teste}/4)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Percepção}} {{Valor_Atributo=[[(@{Per-Teste}/2)]]}} {{Sucesso_Crítico=[[floor(@{Per-Teste}/8)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Percepção}} {{Valor_Atributo=[[(@{Per-Teste}/4)]]}} {{Sucesso_Crítico=[[floor(@{Per-Teste}/16)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
@@ -109,7 +109,7 @@
     <input type="number" style="background-color:lightblue" name="attr_Int"value="0"/> 
     <input type="number" width=3 style='width: 3.5em;' name="attr_Int-Mod" value="(ceil((@{Int}-10)/2))" disabled>
     <input type="number" name="attr_Int-Temp" value="0"/>
-    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Int-Teste" value="(@{Int}*4)" disabled>
+    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Int-Teste" value="(@{Int}*3)" disabled>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Inteligencia}} {{Valor_Atributo=[[@{Int-Teste}]]}} {{Sucesso_Crítico=[[floor(@{Int-Teste}/4)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Inteligencia}} {{Valor_Atributo=[[(@{Int-Teste}/2)]]}} {{Sucesso_Crítico=[[floor(@{Int-Teste}/8)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Inteligencia}} {{Valor_Atributo=[[(@{Int-Teste}/4)]]}} {{Sucesso_Crítico=[[floor(@{Int-Teste}/16)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>    
@@ -119,7 +119,7 @@
     <input type="number" style="background-color:lightblue" name="attr_Von"value="0"/> 
     <input type="number" width=3 style='width: 3.5em;' name="attr_Von-Mod" value="(ceil((@{Von}-10)/2))" disabled>
     <input type="number" name="attr_Von-Temp" value="0"/>
-    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Von-Teste" value="(@{Von}*4)" disabled>
+    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Von-Teste" value="(@{Von}*3)" disabled>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Força de Vontade}} {{Valor_Atributo=[[@{Von-Teste}]]}} {{Sucesso_Crítico=[[floor(@{Von-Teste}/4)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Força de Vontade}} {{Valor_Atributo=[[(@{Von-Teste}/2)]]}} {{Sucesso_Crítico=[[floor(@{Von-Teste}/8)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Força de Vontade}} {{Valor_Atributo=[[(@{Von-Teste}/4)]]}} {{Sucesso_Crítico=[[floor(@{Von-Teste}/16)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
@@ -129,7 +129,7 @@
     <input type="number" style="background-color:lightblue" name="attr_Car"value="0"/> 
     <input type="number" width=3 style='width: 3.5em;' name="attr_Car-Mod" value="(ceil((@{Car}-10)/2))" disabled>
     <input type="number" name="attr_Car-Temp" value="0"/>
-    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Car-Teste" value="(@{Car}*4)" disabled>
+    <input type="number" width=4 style="background-color:lightblue; width: 4.1em;" name="attr_Car-Teste" value="(@{Car}*3)" disabled>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Carisma}} {{Valor_Atributo=[[@{Car-Teste}]]}} {{Sucesso_Crítico=[[floor(@{Car-Teste}/4)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Carisma}} {{Valor_Atributo=[[(@{Car-Teste}/2)]]}} {{Sucesso_Crítico=[[floor(@{Car-Teste}/8)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>
     <button type="roll" style="border:2px solid lightblue;background:transparent;color:black;" value="&{template:default} {{name=@{character_name} Teste de Carisma}} {{Valor_Atributo=[[(@{Car-Teste}/4)]]}} {{Sucesso_Crítico=[[floor(@{Car-Teste}/16)]]}} {{Sucesso_Decisivo=[[@{Bônus-Decisivo}+5]]}} {{Rolagem=[[1d100cs<0cf>96]]}}"></button>   
